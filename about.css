@@ -1,0 +1,177 @@
+body{
+     background-color: #ebdbc8;
+}
+ .head-container{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 10px;
+    background-color: #FCF5EE;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right:20px;
+
+ }
+.head-container img{
+    height: 60px;
+    width:100px;
+    
+}
+
+
+.search-bar{
+    position: relative;
+    flex: 1 1 300px;
+    
+    max-width: 800px;
+   
+
+}
+.head-container > *{
+     min-width: 0;
+}
+.head-container > div:not(.search-bar){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+.search-bar input{
+    width: 92%;
+    padding: 10px 35px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius:20px;
+    outline: none;
+    
+   
+}
+@media(min-width:1065px){
+    .search-bar input{
+        width: 95%;
+    }
+}
+.search-bar i{
+    position: absolute;
+   right:10px;
+
+    
+    top: 50%;
+    transform: translateY(-50%);
+    color:gray
+}
+.nav-items{
+    font-size: x-small;
+}
+
+.nav-right{
+    cursor: pointer;
+}
+
+
+
+/*nav2*/
+.nav-2{
+    background-color: #FCF5EE;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    padding-top: 10px;
+   
+}
+.nav-2 a{
+    text-decoration: none;
+    color: rgb(80, 37, 37);
+     padding: 0 20px 20px 40px ;
+}
+
+.nav-2 a:hover{
+    color: #b57b5b;
+}
+
+
+
+
+
+
+/*Footer*/
+.foot{
+    background-color:  rgb(80, 37, 37);
+    color: rgba(242, 231, 231, 0.926);
+    margin-top: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.upr{
+  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(214, 199, 199);
+}
+
+.question a {
+    text-decoration: none;
+    color: rgb(203, 199, 199);
+    display: block;        /* makes each link appear on new line */
+    margin-bottom: 8px;
+}
+
+.question a:hover {
+    color: #b57b5b;        /* change to your brand color */
+}
+
+.follow{
+    display: flex;
+    justify-content: flex-start;
+    gap:15px;
+
+
+}
+.follow i{
+    padding-top: 15px;
+}
+
+.copyright{
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+
+/*About*/
+.hero{
+    width: 100%;
+  height: 400px;
+ 
+  margin-top: 20px;
+}
+.hero img{
+    width:100%;
+    height: 400px;
+  object-fit: fill;
+}
+
+
+.About-Sec h1{
+   text-align: center;
+}
+
+.head1{
+    border-bottom: 2px solid gray;
+    
+}
+ 
+.para{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+@media(max-width:1024px){
+    .para{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+}

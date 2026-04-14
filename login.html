@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Ira</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="email" id="email" placeholder="Enter Email">
+  <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  if (name && email) {
+    localStorage.setItem("user", JSON.stringify({ name, email }));
+    window.location.href = "index.html";
+  } else {
+    alert("Please fill all fields");
+  }
+}
+</script>
+
+</body>
+</html>
